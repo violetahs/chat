@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.oihana.chat.ChatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="176dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="LOGIN"
+            android:textSize="28dp"/>
+        <EditText
+            android:id="@+id/eTusuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:drawableLeft="@drawable/ic_action_user"/>
+
+        <EditText
+            android:id="@+id/eTpaasword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:drawableLeft="@drawable/ic_lock"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/bTingresar"
+            android:theme="@style/colorBoton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ingresar"
+            android:drawableLeft="@drawable/ic_action_key"/>
+    </LinearLayout>
+
+
+  
+
+</RelativeLayout>
