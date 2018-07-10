@@ -24,8 +24,17 @@ public class ChatActivity extends AppCompatActivity {
         bTingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ChatActivity.this, "Ingresando", Toast.LENGTH_SHORT).show();
+               verificarLogin(eTusuario.getText().toString().toLowerCase(),eTpassword.getText().toString().toLowerCase());
+
+                eTusuario.setText("");
+                eTpassword.setText("");
             }
         });
+
+
+    }
+
+    public void verificarLogin(String user,String pass){
+        Toast.makeText(this, "El usuario es: "+user+"La contraseña es :"+pass, Toast.LENGTH_SHORT).show();
     }
 }
