@@ -33,9 +33,17 @@ public class Mensajeria extends AppCompatActivity {
         for(int i=0;i<10;i++){
             MensajeDeTexto mensajeDeTextoAuxiliar =new MensajeDeTexto();
             mensajeDeTextoAuxiliar.setId(""+i);
-            mensajeDeTextoAuxiliar.setMensaje("Hola"+i);
+            mensajeDeTextoAuxiliar.setMensaje("emisor "+i);
             mensajeDeTextoAuxiliar.setTipoMensaje(1);
-            mensajeDeTextoAuxiliar.setHoraDelMensaje("10:23"+i);
+            mensajeDeTextoAuxiliar.setHoraDelMensaje("10:23");
+            mensajeDeTextos.add(mensajeDeTextoAuxiliar);
+        }
+        for(int i=0;i<10;i++){
+            MensajeDeTexto mensajeDeTextoAuxiliar =new MensajeDeTexto();
+            mensajeDeTextoAuxiliar.setId(""+i);
+            mensajeDeTextoAuxiliar.setMensaje("receptor "+i);
+            mensajeDeTextoAuxiliar.setTipoMensaje(2);
+            mensajeDeTextoAuxiliar.setHoraDelMensaje("10:23");
             mensajeDeTextos.add(mensajeDeTextoAuxiliar);
         }
 
