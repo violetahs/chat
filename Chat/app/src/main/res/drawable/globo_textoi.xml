@@ -6,23 +6,23 @@
         android:color="@color/primary_light"
         />
     <padding
-        android:bottom="3dp"
-        android:left="3dp"
-        android:right="3dp"
-        android:top="3dp" />
+        android:bottom="12dp"
+        android:left="12dp"
+        android:right="12dp"
+        android:top="12dp" />
 
 
     <corners
         android:bottomRightRadius="0dp"
-        android:topRightRadius="200dp"
-        android:topLeftRadius="199dp"
-        android:bottomLeftRadius="178dp"
+        android:topRightRadius="45dp"
+        android:topLeftRadius="45dp"
+        android:bottomLeftRadius="45dp"
 
 
 
         />
     <size
-        android:width="40dp"
+        android:width="75dp"
         android:height="35dp"
         />
 </shape>
