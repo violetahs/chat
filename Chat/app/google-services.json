@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "693451316170",
-    "firebase_url": "https://chat-4127f.firebaseio.com",
-    "project_id": "chat-4127f",
-    "storage_bucket": "chat-4127f.appspot.com"
+    "project_number": "34848973350",
+    "firebase_url": "https://chat-def1e.firebaseio.com",
+    "project_id": "chat-def1e",
+    "storage_bucket": "chat-def1e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:693451316170:android:9659295d828ccdb5",
+        "mobilesdk_app_id": "1:34848973350:android:9659295d828ccdb5",
         "android_client_info": {
           "package_name": "com.example.oihana.chat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "693451316170-1b55khle3nqr7u2ipl8pn4a0t0nd31k0.apps.googleusercontent.com",
+          "client_id": "34848973350-cujm2iv51b9vno8lr127l99sg5qq0sf0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.oihana.chat",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "693451316170-6j8gc10pihbajae4qk9ltg8828hd8bsn.apps.googleusercontent.com",
+          "client_id": "34848973350-uftunbsf2nja458gdlpkqcikeem9hujj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCTSGiVb7UXtEnRPZokvv0DYU1QUHDH_7o"
+          "current_key": "AIzaSyAOYIvMG5YGetegyOe8yuXKWU_-FV38pUM"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "693451316170-6j8gc10pihbajae4qk9ltg8828hd8bsn.apps.googleusercontent.com",
+              "client_id": "34848973350-uftunbsf2nja458gdlpkqcikeem9hujj.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

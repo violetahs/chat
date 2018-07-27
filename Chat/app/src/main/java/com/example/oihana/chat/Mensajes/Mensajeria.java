@@ -4,16 +4,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.AdapterDataObserver;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.oihana.chat.R;
+import com.example.oihana.chat.Servicios.FireBaseServiceMensajes;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.FirebaseInstanceIdService;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class Mensajeria extends AppCompatActivity {
     private MensajesAdapter adapter;
     private Button btnEnviarMensaje;
     private EditText eTEscribirMensaje;
-    private  int TEXT_LINES=1;
+
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,12 +67,16 @@ public class Mensajeria extends AppCompatActivity {
 
 
         LinearLayoutManager lm = new LinearLayoutManager(this);
+        lm.setStackFromEnd(true);
         rcvMensaje.setLayoutManager(lm);
 
         btnEnviarMensaje.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createMensaje(eTEscribirMensaje.getText().toString());
+                String mensaje=eTEscribirMensaje.getText().toString();
+
+                if(!mensaje.isEmpty() )
+                createMensaje(mensaje);
             }
         });
 
@@ -104,6 +108,7 @@ public class Mensajeria extends AppCompatActivity {
     }
 
     public void setScrollbarChat(){
+
         rcvMensaje.scrollToPosition(adapter.getItemCount()-1);
     }
 }
